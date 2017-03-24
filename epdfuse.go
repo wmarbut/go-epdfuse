@@ -22,11 +22,11 @@ type EpdCommand byte
 
 const (
 	// EPD Command to trigger a display update
-	COMMAND_UPDATE = 'U'
+	COMMAND_UPDATE EpdCommand = 'U'
 	// EPD Command to clear display
-	COMMAND_CLEAR = 'C'
+	COMMAND_CLEAR EpdCommand = 'C'
 	// EPD Command to trigger a partial display update
-	COMMAND_PARTIAL = 'P'
+	COMMAND_PARTIAL EpdCommand = 'P'
 )
 
 // Configures EPD Fuse
@@ -77,7 +77,7 @@ func (epd *EpdFuse) Update() error {
 	return epd.update(COMMAND_UPDATE)
 }
 
-func (epd *EpdFuse) update(command byte) error {
+func (epd *EpdFuse) update(command EpdCommand) error {
 	cmdPath := path.Join(epd.EpdPath, EPD_COMMAND_PATH)
 	f, err := os.OpenFile(cmdPath, os.O_WRONLY|os.O_APPEND, 0222)
 	if err != nil {
@@ -85,7 +85,7 @@ func (epd *EpdFuse) update(command byte) error {
 	}
 	defer f.Close()
 
-	_, err = f.Write([]byte{command})
+	_, err = f.Write([]byte{byte(command)})
 	if err != nil {
 		return err
 	}
