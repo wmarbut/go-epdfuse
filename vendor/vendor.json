@@ -1,0 +1,50 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "73ZPhMoFMyrA89TaQ0YLfnJGi9w=",
+			"path": "github.com/fogleman/gg",
+			"revision": "6166aa3c1afaee416f384645a81636267aee6d25",
+			"revisionTime": "2016-12-21T00:30:13Z",
+			"tree": true
+		},
+		{
+			"checksumSHA1": "aJ/kX/eCUlrCJBZ26Hwh/RXzAIw=",
+			"path": "github.com/golang/freetype/raster",
+			"revision": "d9be45aaf7452cc30c0ceb1b1bf7efe1d17b7c87",
+			"revisionTime": "2016-12-08T06:47:10Z"
+		},
+		{
+			"checksumSHA1": "M5K0e+YbpnI/3x9iNF/VOgOFnes=",
+			"path": "github.com/golang/freetype/truetype",
+			"revision": "d9be45aaf7452cc30c0ceb1b1bf7efe1d17b7c87",
+			"revisionTime": "2016-12-08T06:47:10Z"
+		},
+		{
+			"checksumSHA1": "+U1IB5N4LDS74y4fXjARb4/S4IE=",
+			"path": "golang.org/x/image/font",
+			"revision": "c0851fbc5b9272dd7d08a021e9e3d2a21027b51f",
+			"revisionTime": "2017-03-18T06:56:20Z"
+		},
+		{
+			"checksumSHA1": "KsSSl5U1ZkRocio4flF+3PlJUBM=",
+			"path": "golang.org/x/image/font/basicfont",
+			"revision": "c0851fbc5b9272dd7d08a021e9e3d2a21027b51f",
+			"revisionTime": "2017-03-18T06:56:20Z"
+		},
+		{
+			"checksumSHA1": "mi+YA8hJi3z9bAf9EgOzvrdEZLk=",
+			"path": "golang.org/x/image/font/plan9font",
+			"revision": "c0851fbc5b9272dd7d08a021e9e3d2a21027b51f",
+			"revisionTime": "2017-03-18T06:56:20Z"
+		},
+		{
+			"checksumSHA1": "euzvwlMLxyD0hwc+raoVsDLv6j4=",
+			"path": "golang.org/x/image/math/fixed",
+			"revision": "c0851fbc5b9272dd7d08a021e9e3d2a21027b51f",
+			"revisionTime": "2017-03-18T06:56:20Z"
+		}
+	],
+	"rootPath": "github.com/wmarbut/go-epdfuse"
+}
