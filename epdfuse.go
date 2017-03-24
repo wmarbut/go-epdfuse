@@ -77,6 +77,16 @@ func (epd *EpdFuse) Update() error {
 	return epd.update(COMMAND_UPDATE)
 }
 
+// Clear the PaPiRus display
+func (epd *EpdFuse) Clear() error {
+	return epd.update(COMMAND_CLEAR)
+}
+
+// Perform a partial update
+func (epd *EpdFuse) PartialUpdate() error {
+	return epd.update(COMMAND_PARTIAL)
+}
+
 func (epd *EpdFuse) update(command EpdCommand) error {
 	cmdPath := path.Join(epd.EpdPath, EPD_COMMAND_PATH)
 	f, err := os.OpenFile(cmdPath, os.O_WRONLY|os.O_APPEND, 0222)
