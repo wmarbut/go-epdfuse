@@ -20,13 +20,12 @@ const EPD_DEFAULT_HEIGHT = 96
 
 type EpdCommand byte
 
-// EPD Commands for update, clear, and partial update
 const (
-	//trigger update
+	// EPD Command to trigger a display update
 	COMMAND_UPDATE = 'U'
-	//trigger clear
+	// EPD Command to clear display
 	COMMAND_CLEAR = 'C'
-	//trigger partial update
+	// EPD Command to trigger a partial display update
 	COMMAND_PARTIAL = 'P'
 )
 
