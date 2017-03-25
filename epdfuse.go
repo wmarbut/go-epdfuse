@@ -65,6 +65,7 @@ func (epd *EpdFuse) WriteText(text string) error {
 
 // Write image to your PaPiRus display
 func (epd *EpdFuse) WriteImage(img image.Image) error {
+	img = epd.scaleAndPlaceImage(img)
 	err := epd.writeDisplay(goxbm.ToRawXBMBytes(img))
 	if err != nil {
 		return err

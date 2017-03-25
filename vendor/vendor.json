@@ -22,6 +22,13 @@
 			"revisionTime": "2016-12-08T06:47:10Z"
 		},
 		{
+			"checksumSHA1": "r5eQHkttko6kxroDEENXbmXKrSs=",
+			"path": "github.com/nfnt/resize",
+			"revision": "891127d8d1b52734debe1b3c3d7e747502b6c366",
+			"revisionTime": "2016-07-24T20:39:20Z",
+			"tree": true
+		},
+		{
 			"checksumSHA1": "+U1IB5N4LDS74y4fXjARb4/S4IE=",
 			"path": "golang.org/x/image/font",
 			"revision": "c0851fbc5b9272dd7d08a021e9e3d2a21027b51f",
