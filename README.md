@@ -5,3 +5,18 @@ This library provides the ability to write arbitrary text and images to the disp
 
 It leverages the [goxbm](https://github.com/wmarbut/goxbm) project to convert images to the XBM format used by EPD Fuse.
 
+## Install Fuse Driver
+
+The repaper fuse driver is required to use this golang library.
+
+    # Install fuse driver
+    sudo apt-get install libfuse-dev -y
+
+    mkdir /tmp/papirus
+    cd /tmp/papirus
+    git clone https://github.com/repaper/gratis.git
+
+    cd /tmp/papirus/gratis-master/PlatformWithOS
+    make rpi-epd_fuse
+    sudo make rpi-install
+    sudo systemctl start epd-fuse.service
