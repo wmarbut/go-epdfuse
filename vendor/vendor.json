@@ -29,6 +29,12 @@
 			"tree": true
 		},
 		{
+			"checksumSHA1": "954XxJ6VonQ62NQQL65h5agE8kU=",
+			"path": "github.com/wmarbut/goxbm",
+			"revision": "d190b0856849376d47a33cfab6c970bad6c701f6",
+			"revisionTime": "2017-03-24T15:16:19Z"
+		},
+		{
 			"checksumSHA1": "+U1IB5N4LDS74y4fXjARb4/S4IE=",
 			"path": "golang.org/x/image/font",
 			"revision": "c0851fbc5b9272dd7d08a021e9e3d2a21027b51f",
