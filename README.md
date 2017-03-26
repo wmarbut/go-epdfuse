@@ -5,6 +5,8 @@ This library provides the ability to write arbitrary text and images to the disp
 
 It leverages the [goxbm](https://github.com/wmarbut/goxbm) project to convert images to the XBM format used by EPD Fuse.
 
+![Example Image](/example.png?raw=true)
+
 ## Install and setup
 
 ### Install Go
