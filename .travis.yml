@@ -1,0 +1,10 @@
+language: go
+
+install:
+    - go get github.com/kardianos/govendor
+    - govendor sync
+
+go:
+    - 1.7.x
+    - master
+
