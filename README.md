@@ -22,16 +22,20 @@ If cross compiling on a different computer, use these settings `GOARM=5 GOOS=lin
 The repaper fuse driver is required to use this golang library.
 
     # Install fuse driver
-    sudo apt-get install libfuse-dev -y
+    apt-get install libfuse-dev -y
+    # Install fonts
+    apt-get install fonts-freefont-ttf -y
 
+    rm -R /tmp/papirus
     mkdir /tmp/papirus
     cd /tmp/papirus
     git clone https://github.com/repaper/gratis.git
 
-    cd /tmp/papirus/gratis-master/PlatformWithOS
-    make rpi-epd_fuse
-    sudo make rpi-install
-    sudo systemctl start epd-fuse.service
+    cd /tmp/papirus/gratis
+    make rpi EPD_IO=epd_io.h PANEL_VERSION='V231_G2'
+    make rpi-install EPD_IO=epd_io.h PANEL_VERSION='V231_G2'
+    systemctl enable epd-fuse.service
+    systemctl start epd-fuse
 
 ### Get the go-epdfuse project
 
