@@ -73,6 +73,16 @@ func (epd *EpdFuse) WriteImage(img image.Image) error {
 	return epd.Update()
 }
 
+// Write partial image to your PaPiRus display
+func (epd *EpdFuse) WriteImagePartial(img image.Image) error {
+	img = epd.scaleAndPlaceImage(img)
+	err := epd.writeDisplay(goxbm.ToRawXBMBytes(img))
+	if err != nil {
+		return err
+	}
+	return epd.PartialUpdate()
+}
+
 // Force an update of the PaPiRus display
 func (epd *EpdFuse) Update() error {
 	return epd.update(COMMAND_UPDATE)
