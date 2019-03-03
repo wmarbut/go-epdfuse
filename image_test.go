@@ -72,20 +72,20 @@ func TestScaleFactor(t *testing.T) {
 
 	factor = fuse1.scaleFactor(img, AXIS_X)
 	if factor != 1.0 {
-		t.Errorf("Error calculating scale factor. Expected %f, but got %f", 1, factor)
+		t.Errorf("Error calculating scale factor. Expected %f, but got %f", float64(1), factor)
 	}
 	factor = fuse1.scaleFactor(img, AXIS_Y)
 	if factor != 1.0 {
-		t.Errorf("Error calculating scale factor. Expected %f, but got %f", 1, factor)
+		t.Errorf("Error calculating scale factor. Expected %f, but got %f", float64(1), factor)
 	}
 
 	factor = fuse2.scaleFactor(img, AXIS_X)
 	if factor != 0.5 {
-		t.Errorf("Error calculating scale factor. Expected %f, but got %f", 0.5, factor)
+		t.Errorf("Error calculating scale factor. Expected %f, but got %f", float64(0.5), factor)
 	}
 	factor = fuse2.scaleFactor(img, AXIS_Y)
 	if factor != 0.5 {
-		t.Errorf("Error calculating scale factor. Expected %f, but got %f", 0.5, factor)
+		t.Errorf("Error calculating scale factor. Expected %f, but got %f", float64(0.5), factor)
 	}
 }
 
